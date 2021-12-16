@@ -2,7 +2,6 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { Alert, Button, ButtonProps, StyleSheet, Text, TextInput, View } from 'react-native';
 import AddWorkout from './components/AddWorkout';
-import Info from './components/Info';
 
 
 export default function App() {
