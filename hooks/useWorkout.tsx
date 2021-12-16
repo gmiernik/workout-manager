@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
-export default function useWorkout() {
+const useWorkout = () => {
 
-    const [exercises, setExercises] = useState([]);
+    const [exercises, setExercises] = useState<Array<Exercise>>([]);
 
     useEffect(() => console.debug(exercises), [exercises]);
 
-    function addExercise(type, series, difficulty) {
+    function addExercise(type: string, series: number[], difficulty: number) {
         let exercise = {
             type: type,
             series: series,
@@ -15,5 +15,7 @@ export default function useWorkout() {
         setExercises([...exercises, exercise]);
     }
 
-    return [exercises, addExercise];
+    return [exercises, addExercise] as const;
 }
+
+export default useWorkout;
