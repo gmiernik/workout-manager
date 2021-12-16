@@ -22,7 +22,7 @@ export default function App() {
         performedOn: new Date('2021-12-01T15:24:00'),
         durationInMinutes: 50,
         exercises: [
-          { type: "przysiady", series: [10, 12, 14], difficulty: 2 },
+          { type: "przysiady", series: [10, 12, 14], difficulty: 3 },
           { type: "pompki", series: [8, 10, 12], difficulty: 5 },
           { type: "brzuszki", series: [20, 25, 30], difficulty: 7 }
         ],
